@@ -1,15 +1,22 @@
-let figura = document.getElementById("cuadrado2");
-let dibujar = figura.getContext("2d");
+const crearCuadrado = (idcanvas, color, linewidth, numero) => {
+    let tamañoX = 50;
+    let tamañoY = 50;
 
-dibujar.lineWidth = 5;
+    let figura = document.getElementById(idcanvas);
+    let dibujar = figura.getContext("2d");
+    let inicio = 0;
 
-dibujar.fillStyle = "green";
-dibujar.fillRect(0,0,figura.width,figura.height);
-dibujar.strokeStyle = "black";
-dibujar.strokeRect(0,0,figura.width,figura.height)
+    dibujar.lineWidth = linewidth;
+    dibujar.fillStyle = color;
 
-const crearCuadrado = (idcanvas, color, linecolor, numero) => {
+    for (let i = 0; i < numero*50; i+=50){
 
-    
+        let a = i;
+        console.log(a);
+        dibujar.fillRect(i,0,tamañoX,tamañoY);
+        dibujar.strokeStyle = "black";
+        dibujar.strokeRect(i,0,tamañoX,tamañoY);    
+    }
 
+    inicio++;
 }
