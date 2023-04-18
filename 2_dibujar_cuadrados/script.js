@@ -13,7 +13,6 @@ const crearCuadrado = (idcanvas, color, linewidth, numero, tamañoX = 100, tama�
 
         let x = (cuadradosPintados % (figura.width / tamañoX)) * tamañoX;
         let y = Math.floor(cuadradosPintados / (figura.width / tamañoX)) * tamañoY;
-    
 
         // Pintar cuadrado en las coordenadas calculadas
         dibujar.fillRect(x, y, tamañoX, tamañoY);
