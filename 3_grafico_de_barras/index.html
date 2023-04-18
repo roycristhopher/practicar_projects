@@ -11,7 +11,7 @@
 
     <p>Mostrar Gráfico de barras del uso de Browsers</p>
 
-    <canvas id="cuadro_barras" width="600" height="400"></canvas>
+    <canvas id="cuadro_barras" width="600" height="200"></canvas>
 
     <script src="script.js"></script>
     <script>
@@ -19,7 +19,8 @@
         let color = ["blue","green","yellow", "red","gray"];
         let nombres = ["Chrome","Firefox","Edge", "Safari", "Otros"];
 
-        graficar("cuadro_barras", datos, color,nombres);
+        graficar("cuadro_barras", datos, color,nombres,"Lista de Browser usados en 2019");
+
     </script>
 </body>
 </html>
