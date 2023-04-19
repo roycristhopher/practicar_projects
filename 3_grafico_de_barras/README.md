@@ -1,6 +1,6 @@
 # Generar Grafico de Barras
 
-### Ejercicio donde puedes generar un gráfico de barras a partir de arrays con los datos del mismo tamaño.
+### Ejercicio donde puedes generar un gráfico de barras a partir de arrays.
 
 ### El gráfico no tiene un limite, se pueden agregar tantos datos como se desee, mientras no se sobrepase el alto del **canvas**
 
